@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+#
+#  Copyright (c) 2009. David Rupp. All rights reserved.
+#  http://gemviz.rubyforge.org
+
+if ARGV.empty?
+  puts "Usage: gemviz gem1 [gem2 ...]"
+  exit 0
+end
+
+require File.dirname(__FILE__) + '/../lib/gemviz'

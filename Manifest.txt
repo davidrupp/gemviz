@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/gemviz
+lib/gemviz.rb
+test/test_gemviz.rb

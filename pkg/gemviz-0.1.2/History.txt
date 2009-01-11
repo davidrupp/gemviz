@@ -1,0 +1,14 @@
+=== 0.1.2 / 2009-01-10
+
+* added explicit dependency on ruby-graphviz in Hoe's spec
+* removed redundant version information in gemviz.rb
+* changed wording of progress message
+
+=== 0.1.1 / 2009-01-10
+
+* updated default (hoe-generated) README.txt
+
+=== 0.1.0 / 2009-01-10
+
+* initial release
+
