@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'graphviz'
+require 'tempfile'
 
 def build_dependencies_for(graph, gem_name)
   return if graph[gem_name]
@@ -27,10 +28,8 @@ ARGV.each do |gem_name|
     end
   end
 
-  begin
-    g.output(:file => 'temp.dot', :output => 'dot')
-    system "tred temp.dot|dot -Tpng > #{gem_name}.png"
-  ensure
-    File.delete('temp.dot')
+  Tempfile.open("gemviz-#{gem_name}") do |file|
+    g.output(:file => file.path, :output => 'dot')
+    system "tred #{file.path} | dot -Tpng > #{gem_name}.png"
   end
 end
