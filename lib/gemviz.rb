@@ -21,15 +21,15 @@ ARGV.each do |gem_name|
   g = GraphViz::new( "G" )
 
   graph.each do |gem, dependent_gem| 
-    gem_node = g.add_node(%Q/"#{gem}"/)
+    gem_node = g.add_nodes(%Q/"#{gem}"/)
     dependent_gem.each do |dependent|
-      dependent_node = g.add_node(%Q/"#{dependent}"/)
-      g.add_edge(gem_node, dependent_node)
+      dependent_node = g.add_nodes(%Q/"#{dependent}"/)
+      g.add_edges(gem_node, dependent_node)
     end
   end
 
   Tempfile.open("gemviz-#{gem_name}") do |file|
-    g.output(:file => file.path, :output => 'dot')
+    g.output(:dot => file.path)
     system "tred #{file.path} | dot -Tpng > #{gem_name}.png"
   end
 end
