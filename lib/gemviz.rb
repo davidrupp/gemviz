@@ -29,7 +29,7 @@ ARGV.each do |gem_name|
   end
 
   Tempfile.open("gemviz-#{gem_name}") do |file|
-    g.output(:file => file.path, :output => 'dot')
+    g.output(:dot => file.path)
     system "tred #{file.path} | dot -Tpng > #{gem_name}.png"
   end
 end
