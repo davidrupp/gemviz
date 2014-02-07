@@ -1,29 +1,29 @@
-# gemviz
+### gemviz
 
 * http://rubyforge.org/projects/gemviz/
 
-## DESCRIPTION:
+#### DESCRIPTION:
 
 Provides the ability to graph the dependencies of a given installed gem. Uses a similar approach to DepGraph, but finer-grained; graphs dependencies only for the named gem(s), rather than for all installed gems at once.
 
-## FEATURES/PROBLEMS:
+#### FEATURES/PROBLEMS:
 
 * Doesn't take multiple versions into account.
 * [TODO] Add ability to graph reverse-dependencies.
 
-## SYNOPSIS:
+#### SYNOPSIS:
 
   gemviz rails
 
-## REQUIREMENTS:
+#### REQUIREMENTS:
 
 * ruby-graphviz
 
-## INSTALL:
+#### INSTALL:
 
 * sudo gem install gemviz
 
-## LICENSE:
+#### LICENSE:
 
 (The MIT License)
 
