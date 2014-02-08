@@ -2,7 +2,7 @@ require 'rubygems'
 require 'graphviz'
 require 'tempfile'
 
-VERSION = "0.2.0"
+VERSION = "0.2.2"
 
 def build_dependencies_for(graph, gem_name)
   return if graph[gem_name]
