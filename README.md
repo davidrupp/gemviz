@@ -4,7 +4,9 @@
 
 #### DESCRIPTION:
 
-Provides the ability to graph the dependencies of a given installed gem. Uses a similar approach to DepGraph, but finer-grained; graphs dependencies only for the named gem(s), rather than for all installed gems at once.
+Graph the dependencies of an installed gem. Uses a similar approach to
+DepGraph, but finer-grained; graphs dependencies only for the named
+gem(s), rather than for all installed gems at once.
 
 #### FEATURES/PROBLEMS:
 
@@ -21,7 +23,7 @@ Provides the ability to graph the dependencies of a given installed gem. Uses a 
 
 #### INSTALL:
 
-* sudo gem install gemviz
+* gem install gemviz
 
 #### LICENSE:
 
