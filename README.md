@@ -1,7 +1,5 @@
 ### gemviz
 
-* http://rubyforge.org/projects/gemviz/
-
 #### DESCRIPTION:
 
 Graph the dependencies of an installed gem. Uses a similar approach to
